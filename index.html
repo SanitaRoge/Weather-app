@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link href="src/styles.css" rel="stylesheet" type="text/css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Check the weather</h1>
+    
+        <form class="search" id="search-city">
+          <input
+            type="search"
+            id="city-input"
+            placeholder="Enter city name"
+            autocomplete="off"
+          />
+          <input
+            type="submit"
+            value="Search"
+            class="search-button"
+            id="search-button"
+          />
+          
+          <button class="location" id="current-location">
+            Current
+          </button>
+        </form>
+      </div>
+      <div class="card today">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-2" id="city-name"></div>
+            <div class="col-2 date" id="current-time"></div>
+            <div class="col-2 temperature">
+              <span id="temperature">  </span>
+              <span class="unit">
+                ° <a href="#" id="celsius-link"> C </a> |
+                <a href="#" id="fahrenheit-link"> F </a>
+              </span>
+            </div>
+            <div class="col-1">☀️</div>
+            <div class="col-3">Condition</div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+
+      <div class="col-2 card next-day">
+        <div class="card-body">
+          
+            <div >Date</div>
+            <div >Temperature</div>
+            <div >☀️</div>
+            <div >Condition</div>
+
+        </div>
+      </div>
+      <div class="col-2 card next-day">
+        <div class="card-body">
+          
+            <div >Date</div>
+            <div >Temperature</div>
+            <div >☀️</div>
+            <div >Condition</div>
+          
+        </div>
+      </div>
+      <div class="col-2 card next-day">
+        <div class="card-body">
+         
+            <div >Date</div>
+            <div >Temperature</div>
+            <div >☀️</div>
+            <div >Condition</div>
+          
+        </div>
+      </div>
+      <div class="col-2 card next-day">
+        <div class="card-body">
+        
+            <div >Date</div>
+            <div >Temperature</div>
+            <div >☀️</div>
+            <div >Condition</div>
+          
+        </div>
+      </div>
+      <div class=" col-2 card next-day">
+        <div class="card-body">
+          
+            <div >Date</div>
+            <div >Temperature</div>
+            <div >☀️</div>
+            <div >Condition</div>
+          
+        </div>
+      </div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>

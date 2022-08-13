@@ -1,0 +1,57 @@
+body {
+  width: 800px;
+  text-align: center;
+  margin: auto;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+}
+h1 {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 30px;
+  margin: 10px;
+}
+
+.search {
+  background: #5dacbd;
+  padding: 5px;
+  border-radius: 10px;
+  text-align: center;
+  color: #fff;
+  margin: auto;
+}
+.search-button {
+  padding: 5px 20px;
+  border-radius: 10px;
+  background-color: #24527a;
+  border-color: #24527a;
+  color: #fff;
+  margin: auto;
+}
+.location {
+  color: #fff;
+  border-color: #c9356c;
+  background: #c9356c;
+  border-radius: 20px;
+  padding: 10px 10px;
+}
+.today {
+  width: 90%;
+  margin: 15px auto;
+  padding: 10px 0;
+  background-color: #cadefc;
+  color: #070f4e;
+  text-align: center;
+}
+.next-day {
+  margin: auto;
+  padding: 5px;
+  background-color: rgba(219, 16, 209, 0.4);
+  color: #c9356c;
+  text-align: center;
+}
+.card {
+  padding: 0;
+  margin: 10px auto;
+}
